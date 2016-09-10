@@ -1,0 +1,38 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="static/welcome/css/style.css">
+
+    {% if title %}
+    <title>{{ title }} - blog</title>
+    {% else %}
+    <title>apicrawler blog</title>
+    {% endif %}
+  <style type="text/css">
+      input {
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	-webkit-appearance: none;
+	display: block;
+	background: #fafafa;
+	color: #636363;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #757575;
+}
+  </style>
+  </head>
+  <body>
+  <form action="/listopenissues" method="post">
+      <div class="group">
+          <h3>Enter Url</h3>
+          <input type="text" name="urlValue"><span class="highlight"></span><span class="bar"></span>
+      </div>
+      <button type="submit" class="button buttonBlue">List Open Issues
+          <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+      </button>
+  </form>
+  <br>
+
+  </body>
+</html>
